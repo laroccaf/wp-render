@@ -1,8 +1,8 @@
-TAR_OPTIONS: --no-same-owner
-
 # You can change this to a different version of Wordpress available at
 # https://hub.docker.com/_/wordpress
 FROM wordpress:latest
+
+ENV TAR_OPTIONS="--no-same-owner"
 
 # Install WP-CLI
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
