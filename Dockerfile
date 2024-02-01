@@ -3,7 +3,7 @@
 FROM wordpress:latest
 
 # Install the MySQL client
-RUN apt-get update && apt-get install -y default-mysql-client
+RUN apt-get update && apt-get install -y default-mysql-client git
 
 # Install WP-CLI
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar \
